@@ -43,7 +43,7 @@ section {
     justify-self: center; 
     text-align: center;
     margin-bottom: 100px;
-    margin-left: 50px;
+    margin-left: 0px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -53,6 +53,7 @@ section {
     font-size: var(--largest-title-font);
     color: var(--light-color);
     font-weight: 500;
+    justify-self: center;
 }
 
 .intro .subtitle {
@@ -62,7 +63,7 @@ section {
 
 @media (max-width: 700px){
     .intro {
-        background-position: -585px;
+        background-position: -650px;
     }
 }
 
@@ -205,7 +206,9 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 98%;
     max-width: 1000px;
+    justify-self: center;
 }
 
 .venue img.venue-image-2 {
@@ -313,6 +316,13 @@ section {
     justify-self: center;
 }
 
+@media (max-width: 800px) {
+    .itinerary .item {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .itinerary .item .time {
     width: 300px;
     color: var(--accent-color-2);
@@ -345,7 +355,7 @@ section {
 }
 
 .registry img {
-    width: 400px;
+    width: 300px;
     justify-self: center;
 }
 

@@ -1,6 +1,7 @@
 # Wedding Website
 
 ### Features
+- Semantic HTML
 - Flexbox Layout
 - Grid Layout
 - Fully Responsive
