@@ -203,16 +203,15 @@ section {
 
 .venue .text {
     font-size: var(--small-text-font);
-    display: flex;
-    flex-direction: column;
     gap: 20px;
     width: 98%;
     max-width: 1000px;
+    text-wrap: wrap;
     justify-self: center;
 }
 
 .venue img.venue-image-2 {
-    max-width: 300px;
+    max-width: 250px;
     justify-self: center;
     padding-top: 100px;
 }
@@ -355,7 +354,7 @@ section {
 }
 
 .registry img {
-    width: 300px;
+    width: 250px;
     justify-self: center;
 }
 
@@ -367,4 +366,12 @@ section {
     font-size: var(--small-text-font);
     max-width: 1000px;
     justify-self: center;
+}
+
+/* adjustments for mobile */
+
+@media (max-width: 700px) { 
+    .subtitle {
+        font-size: 2.8rem;
+    }
 }
