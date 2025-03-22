@@ -203,11 +203,13 @@ section {
 
 .venue .text {
     font-size: var(--small-text-font);
-    gap: 20px;
     width: 98%;
     max-width: 1000px;
-    text-wrap: wrap;
     justify-self: center;
+}
+
+.venue p {
+    margin-bottom: 20px;
 }
 
 .venue img.venue-image-2 {
