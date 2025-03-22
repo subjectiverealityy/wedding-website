@@ -182,13 +182,13 @@ section {
 }
 
 .venue img.venue-image-1 {
-    justify-self: center;
+    display: grid;
+    place-self: center;
+    max-width: 100%;
 }
 
-.venue-content {
-    display: grid;
-    gap: 50px;
-    justify-content: center;
+.venue-content > * {
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -211,8 +211,9 @@ section {
 }
 
 .venue img.venue-image-2 {
-    max-width: 250px;
-    justify-self: center;
+    max-width: 300px;
+    display: grid;
+    place-self: center;
     padding-top: 100px;
 }
 
@@ -280,6 +281,14 @@ section {
         grid-template-rows: 1fr 1fr 1fr;
         justify-items: center;
         gap: 80px;
+        }
+
+        .accommodation .title {
+            font-size: 2.7rem;
+        }
+    
+        .accommodation .subtitle {
+            font-size: 2.2rem;
         }
     }
 
@@ -366,12 +375,4 @@ section {
     font-size: var(--small-text-font);
     max-width: 1000px;
     justify-self: center;
-}
-
-/* adjustments for mobile */
-
-@media (max-width: 700px) { 
-    .subtitle {
-        font-size: 2.8rem;
-    }
 }
